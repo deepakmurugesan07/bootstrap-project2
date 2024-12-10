@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLEAT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+
+<body>
+    <section id="index.html">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">CLEAT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link dropdown-toggle" href="#collection" >Collection</a> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#collection" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Collection
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#categaries1">Categories</a></li>
+                                <li><a class="dropdown-item" href="#featured Products1">Featured Products</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#latest Products">Latest products</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="login.html"><button class="btn btn-outline-secondary"
+                            aria-label="Sign In">SignIn</button></a>
+
+
+
+                    <form class="d-flex ms-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="box">
+                        <div class="cart-count"></div>
+                        <ion-icon name="cart" id="cart-icon"></ion-icon>
+                    </div>
+                    <div class=" cart">
+                        <div class="cart-title">Cart Items</div>
+                        <div class="cart-content">
+                            <div class="cart-box">
+                                <img src="images/th7.jpg" class="cart-img">
+                                <div class="detail-box">
+                                    <div class="Cart-product-title">Sneakers</div>
+                                    <div class="price-box">
+                                        <div class="cart-price">Rs.450</div>
+                                        <div class="cart-amnt">Rs.450</div>
+                                    </div>
+                                    <input type="number" value="1" class="cart-quantity">
+                                </div>
+                                <ion-icon name="trash" class="cart-remove"></ion-icon>
+                            </div>
+                            <div class="cart-box">
+                                <img src="images/th7.jpg" class="cart-img">
+                                <div class="detail-box">
+                                    <div class="Cart-product-title">Sneakers</div>
+                                    <div class="price-box">
+                                        <div class="cart-price">Rs.450</div>
+                                        <div class="cart-amnt">Rs.450</div>
+                                    </div>
+                                    <input type="number" value="1" class="cart-quantity">
+                                </div>
+                                <ion-icon name="trash" class="cart-remove"></ion-icon>
+                            </div>
+                            <div class="total">
+                                <div class="total-title">Total</div>
+                                <div class="total-price">Rs.0</div>
+                            </div>
+                            <button class="btn-buy">Place Order</button>
+                            <ion-icon name="close" id="cart-close"></ion-icon>
+
+                        </div>
+                    </div>
+        </nav>
+        <br>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/indx2.jpg" class="d-block w-100" alt="Image 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p><b>Don't Miss a Chance.</b></p>
+                        <button type="button" class="btn btn-outline-dark">Order</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/indx4.jpg" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p><b>Shop Trending Shoes.</b></p>
+                        <button type="button" class="btn btn-outline-dark">Order</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/indx3.jpg" class="d-block w-100" alt="Image 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p><b>Best Launch SHOES</b></p>
+                        <button type="button" class="btn btn-outline-dark">Order</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div><br><br><br><br><br>
+        <!---about--->
+        <section id="about">
+            <div class="container-fluid" data-aos="flip-right" data-aos-duration="1000">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <img src="images/indx.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h1>ABOUT US</h1>
+                        <p>Welcome to Cleat, where style meets comfort with every step you take. Founded on the belief
+                            that
+                            footwear should not only enhance your look but also support your lifestyle, we are
+                            passionate
+                            about providing high-quality shoes that cater to every occasion and personality.
+
+                            Our journey began with a simple vision: to create a collection of shoes that seamlessly
+                            blend
+                            fashion and functionality. Whether you're searching for the perfect pair of sneakers for
+                            your
+                            morning jog, elegant heels for a night out, or durable boots for your outdoor adventures, we
+                            have you covered.
+
+                            At Cleat, we prioritize quality and sustainability. Our materials are carefully selected to
+                            ensure durability and comfort, while our manufacturing processes aim to minimize
+                            environmental
+                            impact. We believe in creating products that you can feel good about wearing—both in style
+                            and
+                            conscience.
+
+                            We understand that shoes are more than just an accessory; they are an expression of who you
+                            are.
+                            That’s why we offer a diverse range of styles, colors, and sizes to ensure everyone can find
+                            their perfect match. Our dedicated team is here to help you every step of the way, whether
+                            you
+                            need styling advice or assistance with sizing.
+
+                            Join us on our journey to redefine footwear. Explore our latest collections and discover the
+                            perfect pair that not only complements your wardrobe but also supports your lifestyle.
+
+                            Thank you for choosing Cleat. We can’t wait for you to step into our world!
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <!----------Featured categories--------------->
+
+        <section id="categaries1">
+            <div class="categories">
+                <h2 class="title">Categories</h2>
+
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/the1.jpg" alt="">
+                            <h3 class="cate-text">Oxford</h3>
+                        </div>
+                        <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/th10.jpg" alt="">
+                            <h3 class="cate-text">sneakers</h3>
+                        </div>
+
+                        <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/th13.jpg" alt="">
+                            <h3 class="cate-text">Training Hikes </h3>
+
+                        </div>
+                        <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/th4.jpg" alt="">
+                            <h3 class="cate-text">Boots</h3>
+
+                        </div>
+                        <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/the4.jpg" alt="">
+                            <h3 class="cate-text">Desert</h3>
+                        </div>
+                        <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/th12.jpg" alt="">
+                            <h3 class="cate-text">Loafer</h3>
+                        </div>
+                        <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/the5.jpg" alt="">
+                            <h3 class="cate-text">Derby</h3>
+                        </div>
+                        <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/th11.jpg" alt="">
+                            <h3 class="cate-text">Boat</h3>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="container-2">
+            <div class="marquee-container">
+                <div class="marquee-text">
+                    <strong>Special Offer: Get 50% Off on All Products! Hurry, Limited Time Offer!</strong>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!--------Featured products----------->
+        <section id="featured Products1">
+
+            <div class="small-container">
+                <h2 class="title">Featured Products</h2>
+                <div class="row">
+                    <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="images/th2.jpg">
+                        <h4>casual Shoe</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+
+
+                        </div>
+                        <p>$299.5</p>
+                        <a href="#" class="card-btn">Add to Cart</a>
+                    </div>
+                    <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="images/th13.jpg">
+                        <h4>casual Shoe</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+
+
+
+
+                        </div>
+                        <p>$299</p>
+                        <a href="#" class="card-btn">Add to Cart</a>
+                    </div>
+                    <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="images/th8.jpg">
+                        <h4>casual Shoe</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+
+
+                        </div>
+                        <p>$299</p>
+                        <a href="#" class="card-btn">Add to Cart</a>
+                    </div>
+                    <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="images/th7.jpg">
+                        <h4>casual Shoe</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+
+
+
+                        </div>
+                        <p>$199</p>
+                        <a href="#" class="card-btn">Add to Cart</a>
+                    </div>
+
+                    <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="images/th12.jpg">
+                        <h4> nikecasual Shoe</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+
+
+                        </div>
+                        <p>$299</p>
+                        <a href="#" class="card-btn">Add to Cart</a>
+
+                    </div>
+
+                    <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="images/th9.jpg">
+                        <h4>nike casual Shoe</h4>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+
+
+                        </div>
+                        <p>$399</p>
+                        <a href="#" class="card-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!----------offer------------->
+            <div class="container-fluid" data-aos="flip-right" data-aos-duration="1000">
+                <div class="offer-banner-inline">
+                    <img src="images/offer.jpg" alt="Offer Image" class="offer-image">
+
+                    <div class="offer-text-container">
+
+                        <p class="offer-text">Special Offer: Save 20% on All Products!</p>
+                        <p class="text-2">The Cleat shoe blends cutting-edge technology with stylish design, offering
+                            superior
+                            comfort and performance for athletes and everyday wearers alike. Known for its innovation,
+                            durability, and iconic style, Cleat continues to set the standard in footwear.
+
+
+
+                        </p>
+                        <a href="#" class="offer-btn">Shop Now</a>
+                    </div>
+
+                </div>
+
+
+
+            </div><br><br>
+            <hr>
+            <section id="latest Products">
+                <h2 class="title">Latest Products</h2>
+
+                <div class="small-container">
+
+                    <div class="row">
+                        <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/the4.jpg">
+                            <h4>casual Shoe</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+
+
+                            </div>
+                            <p>$299.5</p>
+                            <a href="#" class="card-btn">Add to Cart</a>
+                        </div>
+                        <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/th14.jpg">
+                            <h4>casual Shoe</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+
+
+
+
+                            </div>
+                            <p>$299</p>
+                            <a href="#" class="card-btn">Add to Cart</a>
+                        </div>
+                        <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/th9.jpg">
+                            <h4>casual Shoe</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+
+
+                            </div>
+                            <p>$299</p>
+                            <a href="#" class="card-btn">Add to Cart</a>
+                        </div>
+                        <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/th6.jpg">
+                            <h4>casual Shoe</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+
+
+
+                            </div>
+                            <p>$199</p>
+                            <a href="#" class="card-btn">Add to Cart</a>
+                        </div>
+
+                        <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/th5.jpg">
+                            <h4> nikecasual Shoe</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+
+
+                            </div>
+                            <p>$299</p>
+                            <a href="#" class="card-btn">Add to Cart</a>
+
+                        </div>
+
+                        <div class="col-4" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="images/th3.jpg">
+                            <h4>nike casual Shoe</h4>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+
+
+
+                            </div>
+                            <p>$399</p>
+                            <a href="#" class="card-btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section><br>
+
+        <hr>
+
+        <!------------testimonial-------->
+        <div class="testimonial">
+            <div class="small-container">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="row">
+                    <!-- Testimonial 1 -->
+                    <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto officiis consectetur
+                            repudiandae
+                            tempore. Similique, modi in quam incidunt voluptatibus debitis quisquam accusantium labore
+                            quas
+                            vitae qui.</p>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                        <img src="/images/rev-1.jpg" alt="Porter">
+                        <h3>Porter</h3>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto officiis consectetur
+                            repudiandae
+                            tempore. Similique, modi in quam incidunt voluptatibus debitis quisquam accusantium labore
+                            quas
+                            vitae qui.</p>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                        <img src="/images/rev-2.jpg" alt="Harry">
+                        <h3>Harry</h3>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto officiis consectetur
+                            repudiandae
+                            tempore. Similique, modi in quam incidunt voluptatibus debitis quisquam accusantium labore
+                            quas
+                            vitae qui.</p>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        </div>
+                        <img src="/images/rev-3.jpg" alt="Lessy">
+                        <h3>Lessy</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <section id="Contact">
+
+            <div class="container" data-aos="slide-right" data-aos-offset="500" data-aos-duration="1000">
+                <div class="row">
+                    <!-- Contact Image Column -->
+                    <div class="col-lg-6 col-md-6 col-12 contact-image">
+                        <img src="images/about.jpg" alt="Contact Us">
+                    </div>
+
+                    <!-- Contact Form Column -->
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h1>Contact Us</h1>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Enter Your Message" rows="5"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <br>
+    <hr>
+    <!-------footer-------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- First Column: Download App -->
+                <div class="footer-col">
+                    <h1>Download our App</h1>
+                    <p>Download the app for Android and iOS mobile phones</p>
+                    <div class="app-logo">
+                        <img src="images/app-store.png.png" alt="Play Store">
+                        <img src="images/play-store.png.png" alt="App Store">
+                    </div>
+                </div>
+                
+                <!-- Second Column: Purpose Statement -->
+                <div class="footer-col">
+                    <p>Our purpose is sustainably making the pleasure and benefits of sports accessible to many.</p>
+                </div>
+                
+                <!-- Third Column: Useful Links -->
+                <div class="footer-col">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="#">Blog Posts</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fourth Column: Social Media -->
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Footer Separator -->
+            <hr>
+    
+            <!-- Copyright Section -->
+            <div class="copyright">Copyright 2024 - Easy Tutorials</div>
+        </div>
+    </div>
+    
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js">
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+            </section>
+
+</body>
+
+
+</html>
